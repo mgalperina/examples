@@ -73,11 +73,11 @@ namespace Task1Project
 #line 5
 this.ScenarioSetup(scenarioInfo);
 #line 6
- testRunner.Given("I\'m on Google Home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I navigate to http://google.com url", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 7
  testRunner.When("I type istqb into a search field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 8
-  testRunner.Then("I should see www.anztb.org/ link in results", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I should see www.anztb.org/ link in results", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
@@ -92,11 +92,119 @@ this.ScenarioSetup(scenarioInfo);
 #line 10
  this.ScenarioSetup(scenarioInfo);
 #line 11
- testRunner.Given("I\'m on Google Home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I navigate to http://google.com url", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 12
  testRunner.When(string.Format("I type {0} into a search field", searchingWords), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 13
  testRunner.Then("I should see www.anztb.org/ link in results", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("searching by a picture for the word balloon")]
+        public virtual void SearchingByAPictureForTheWordBalloon()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("searching by a picture for the word balloon", ((string[])(null)));
+#line 19
+ this.ScenarioSetup(scenarioInfo);
+#line 20
+ testRunner.Given("I navigate to http://google.com url", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 21
+ testRunner.When("I upload C:\\Users\\Mashu\\Desktop\\tre\\balloon_PNG584.png picture into a search fiel" +
+                    "d", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 22
+ testRunner.Then("I should see balloon word in results", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("searching by a picture with the presence of the same one")]
+        public virtual void SearchingByAPictureWithThePresenceOfTheSameOne()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("searching by a picture with the presence of the same one", ((string[])(null)));
+#line 24
+ this.ScenarioSetup(scenarioInfo);
+#line 25
+ testRunner.Given("I navigate to http://google.com url", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 26
+ testRunner.When("I upload C:\\Users\\Mashu\\Desktop\\tre\\balloon_PNG584.png picture into a search fiel" +
+                    "d", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 27
+ testRunner.Then("I should see balloon image in results", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("change the language to Maori by linktext")]
+        public virtual void ChangeTheLanguageToMaoriByLinktext()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("change the language to Maori by linktext", ((string[])(null)));
+#line 29
+ this.ScenarioSetup(scenarioInfo);
+#line 30
+ testRunner.Given("I navigate to http://google.com url", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 31
+ testRunner.When("I change the language to Maori", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 32
+ testRunner.Then("I should see Atahanga link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("searching \"London\" in Google")]
+        public virtual void SearchingLondonInGoogle()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("searching \"London\" in Google", ((string[])(null)));
+#line 34
+ this.ScenarioSetup(scenarioInfo);
+#line 35
+ testRunner.Given("I navigate to http://google.com url", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 36
+ testRunner.When("I type London into a search field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 37
+ testRunner.Then("I should see the capital of England text in results", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Forgot password link leads to the page Password retrieval")]
+        public virtual void ForgotPasswordLinkLeadsToThePagePasswordRetrieval()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Forgot password link leads to the page Password retrieval", ((string[])(null)));
+#line 39
+ this.ScenarioSetup(scenarioInfo);
+#line 40
+ testRunner.Given("I navigate to http://vk.com url", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 41
+ testRunner.When("I click Forgot your password link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 42
+ testRunner.Then("I should see Password retrieval name of the page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("calculating different salary rates with different inputs")]
+        [NUnit.Framework.TestCaseAttribute("45000", "3,155.79", new string[0])]
+        [NUnit.Framework.TestCaseAttribute("95000", "5,950.80", new string[0])]
+        [NUnit.Framework.TestCaseAttribute("100000", "6,224.17", new string[0])]
+        [NUnit.Framework.TestCaseAttribute("120000", "7,317.67", new string[0])]
+        public virtual void CalculatingDifferentSalaryRatesWithDifferentInputs(string salary, string monthlySalary, string[] exampleTags)
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("calculating different salary rates with different inputs", exampleTags);
+#line 44
+ this.ScenarioSetup(scenarioInfo);
+#line 45
+ testRunner.Given("I navigate to http://www.paye.net.nz/calculator.html url", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 46
+ testRunner.When(string.Format("I type {0} into a salary field", salary), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 47
+ testRunner.Then(string.Format("I should see {0} for each salary rate", monthlySalary), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

@@ -19,7 +19,11 @@ namespace Task1Project
 
         public void FindText(string text)
         {
-           _driver.FindElement(By.XPath($"//*[text()[contains(.,'{text}')]]"));
+          _driver.FindElement(By.XPath($"//*[text()[contains(.,'{text}')]]"));
+    
         }
+
+
+
     }
 }
